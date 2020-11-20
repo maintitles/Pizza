@@ -1,14 +1,17 @@
 <template>
     <div id="app">
-        <div class="container">
+        <div class="container-fluid">
             <HeaderNav />
+        </div>
+        <div class="container">
+            <router-view></router-view>
         </div>
     </div>
 </template>
 
 <script>
 
-import HeaderNav from "./components/HeaderNav.vue"
+import HeaderNav from "./views/HeaderNav.vue"
 export default {
     name: 'App',
     components: {
